@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JAVASCRIPT OUTPUT METHODS</title>
+        <style>
+            body{font-family:Arial,sans-serif;padding:20px;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Javascript output methods</h1>
+        <button onclick="showalert()">show alert</button>
+        <button onclick="logtoconsole()">log to console</button>
+        <button onclick="writetodocument()">write to document</button>
+        <button onclick="updatedom()">update dom</button>
+        <div id="outputArea">output will appear here...</div>
+        <script>
+            //1.Alert box
+            function showalert(){
+                alert("this is an alert box!");
+            }
+
+            //2. console log
+            function logtoconsole(){
+                console.log("this message is loged to the console.");
+            }
+
+            //3.Document write
+            function writetodocument() {
+                document.write("this text is written directly to the document.");
+            }
+
+            //4.DOM manipulation
+            function updateDOM() {
+                document.getelementbyid("outputarea").innertext = "this text was inserted using DOM manipulation.";
+            }
+        </script>
+    </body>
+  
+
+</html>

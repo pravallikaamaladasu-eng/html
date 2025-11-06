@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                border:1;
+                width:50%;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <from onsubmit="registrationfun(event)">
+            <label>Name</label><br>
+            <input type="text"id="name"name="name"><br>
+            <label>email id:</label><br>
+            <input type="email"id="email" name="email"><br>
+            <label>date of birth</label><br>
+            <input type="date"id="dob"name="dob"><br>
+            <label>address</label><br>
+            <textarea id="address"name="address"></textarea><br>
+            <p>gender:</p>
+            <input type="radio"id="male"name="gender"value="male">
+            <label>male</label><br>
+            <input type="radio"id="female"name="gender"value="female">
+            <label>female</label><br>
+            <p>languages known:</p>
+            <input type="checkbox"id="telugu"name="language"value="telukgu">
+            <label>telugu</label><br>
+            <input type="checkbox"id="english"name="language"value="english">
+            <label>english</label><br>
+            <input type="checkbox"id="hindi"name="language"value="hindi">   
+            <label>hindi</label><br>
+            <input type="checkbox"id="tamil"name="language"value="tamil">
+            <label>tamil</label><br>
+            <input type="checkbox"id="spanish"name="language"value="spanish">
+            <label>spanish</label><br>
+            <p>country:</p>
+            <select id="country">
+                <option>select</option>
+                <option> value="india">india</option>
+                <option> value="china">china</option>
+                <option> value="japan">japan</option>
+
+            </select><br><br>
+            <button>signin</button>
+            <button onclick="loginfun()">login</button>
+
+        </from>
+        <center><div id="result"></div></center>
+        <script>
+            function loginfun()
+            {
+                username=prompt("enter username");
+                password=prompt("enetr password");
+                alert("login successful"+"username:"+username+"password:"+password);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            div p {
+                background-color:green;
+            }
+            </style>
+            </head>
+            <body>
+
+                <h2>Descendant selector</h2>
+
+                <p>the descendant selector</p>
+
+                <div>
+                    <p>paragraph 1 in the div.</p>
+                    <p>paragraph 2 in the div.</p>
+                <section>
+                    <!-- not child but descendant-->
+                     <p>paragraph 3 in the div (inside a section element).</p>
+                </section>
+                <p>paragraph 4 in the div.</p>
+            </div>
+
+            <p>paragraph 5.not in a div.</p>
+            <p>paragraph 6.not in a div.</p>
+
+        </body>
+        </html>

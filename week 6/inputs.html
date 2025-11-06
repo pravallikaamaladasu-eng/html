@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Input methods</title>
+        <style>
+            body {front-family:Arial,sans-serif;padding:20px;}
+            input,button { margin: 10px 0; display:block;}
+            #output { margin-top: 20px; font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <h1>ways to take input in javascript</h1>
+        <!-- 1. Text input field-->
+         <label> Enter your name:</label>
+         <Input type="text" id="nameinput">
+        <button onclick="getinputfromfield()">submit name</button>
+
+          <!--2. prompt box-->
+         <button onclick="getinputfromprompt()">Enter Age (prompt)</button>
+
+            <!--3. form Input-->
+            <from onsubmit="getinputfromform(event)">
+                <label>enter your email:</label>
+                <input type="email" id="emailinput">
+                <button type="submit">submit email</button>
+            </from>
+
+            <!--4.Dropdown selection-->
+            <label>select your country:</label>
+            <select id="country select">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="JAPAN">JAPAN</option>
+            </select>
+            <button onclick="getinputfromdropdown()">submit country</button>
+
+            <div id="output">your input will appear here.</div>
+
+
+            <script>
+                //1. Input from text field
+                function getinputfromfield(){
+                    const name = document.getelementbyid("nameinput").value;
+                    document.getelementbyid("output").innerText="name:"+name;
+                }
+
+                //2. Input from prompt box
+                function getinputfromprompt(){
+                    const age = prompt("please enter your age");
+                    document.getelementbyid("output").innertext="Age:"+age;
+                }
+
+                //3. Input from form
+                function getinputfromform(event){
+                    event.preventdefault();
+                    const email= document.getelementbyid("emailinput").value;
+                    document.getelementbyid("output").innertext="email:"+Enumerator
+
+                }
+
+                //4. Input from dropdown
+                function getinputfromdropdown(){
+                    const country=document.getelementbyid("countryselect").value;
+                    document.getelementbyid("output").innertext="country:"+country;
+                }
+
+               
+            </script>
+    </body>
+</html>

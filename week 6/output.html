@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of outputs</title>
+</head>
+<body>
+    <div id="demo">
+        <button onclick="docbox()">Document</button>
+        <button onclick="alertbox()">Alert</button>
+        <button onclick="consolebox()">Console</button>
+        <button onclick="htmlelement()">Id</button>
+    </div>
+    <script>
+        function docbox()
+        {
+        document.write("Hello!!!😍");
+        }
+         function alertbox()
+        {
+          alert("Your PC is running low");
+        }
+         function consolebox()
+        {
+        console.log("Debugging purpose");
+        }
+         function htmlelement()
+        {
+       document.getElementById("demo").innerHTML="<I>javascript</I>"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document object example</title>
+    </head>
+    <body>
+        <h1 id="heading">THIS IS A DEMO OF DOCUMENT OBJECT.</h1>
+        <p id="demo"></p>
+        <div id="output"></div>
+        <button onclick="showinfo()">show document info</button>
+        <button id="mybtn">try it</button>
+
+        <script>
+            function showinfo() {
+                //using document properties
+                let title=document.title;
+                let url=document.url;
+                let lastmodified=document.lastmodified;
+
+                //using document methods
+                document.getElementById("heading").style.color="blue";
+                document.getElementById("output").innerhtml=
+                "title:" + title +"<br>" +
+                "url:" + url +"<br>" +
+                "last modified:" + lastmodified;
+            }
+            document.getElementById("mybtn").addeventlistener("click",displaydate);
+            function displaydate() {
+                document.getElementById("demo").innerhtml=date();
+            }
+        </script>
+    </body>
+</html>
